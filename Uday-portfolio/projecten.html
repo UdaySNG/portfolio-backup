@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="main.js" defer></script>
+
     <title>My Projects</title>
 </head>
 <body>
@@ -20,6 +23,7 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
+        <a href="/index.html" class="header__button header__button--home">Thuis</a>
         <button class="header__button header__button--projects">Mijn Projecten</button>
         <button class="header__button header__button--about">Over Mij</button>
         <button class="header__button header__button--contact">Contact</button>
@@ -27,11 +31,261 @@
     </header>
 
     <main>
-        <section class="project-details">
-            <h2 class="project-details__title">Yubtub</h2>
-            <img src="/img/youtube-dark2.png" alt="Project 1" class="project-details__image">
-            <p class="project-details__description">Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform.</p>
-            <!-- Voeg andere gedetailleerde informatie toe over het project -->
+        <section class="section section--projects">
+
+            <article class="project">
+                <img src="img/yubtub.webp" alt="Project 1" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">
+                        Yubtub
+                        <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description">Hier had ik een YouTube-kloon gemaakt met de huisstijl van het Twitch-streamingplatform.</p>
+                </div>
+            </article>
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-1-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/yubtub.webp" alt="Project 1">
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Yubtub</h2>
+                            <p class="popup__description" id="js--language-desc-popup-1">Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform, gemaakt, ik had wel lokale video's gebruikt maar ben wel van plan om dit opnieuw te maken met echte video links van youtube, dit was helemaal gerenderd in javascript en het was wel uitdagend.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+            
+        
+            <article class="project">
+                <img src="img/udemy.webp" alt="Project 2" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">Udemy-Clone
+                        <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description" id="js--language-desc-1">In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
+                </div>
+            </article>
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-2-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/udemy.webp" alt="Project 1">
+                            
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Udemy</h2>
+                            <p class="popup__description" id="js--language-desc-popup-2">In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+        
+            <article class="project">
+                <img src="img/colorpick.webp" alt="Project 3" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">
+                        ColorPicker
+                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description"  id="js--language-desc-2">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                </div>
+            </article>
+    
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-3-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/colorpick.webp" alt="Project 1">
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Colorpicker</h2>
+                            <p class="popup__description" id="js--language-desc-popup-3">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+
+            <article class="project">
+                <img src="img/banky.webp" alt="Project 3" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">
+                        Banky
+                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description"  id="js--language-desc-3">In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond. </p>
+                </div>
+            </article>
+    
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-4-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/banky.webp" alt="Project 1">
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Banky</h2>
+                            <p class="popup__description" id="js--language-desc-popup-4">In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+
+            <article class="project">
+                <img src="img/tulp.webp" alt="Project 3" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">
+                        Tulpreizen
+                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description"  id="js--language-desc-4">Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things</p>
+                </div>
+            </article>
+    
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-5-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/tulp.webp" alt="Project 1">
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Tulpreizen</h2>
+                            <p class="popup__description" id="js--language-desc-popup-5">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+
+
+            <article class="project">
+                <img src="img/encrypt.webp" alt="Project 3" class="project__image">
+                <div class="project__info">
+                    <h2 class="project__title">
+                        Encrypter-Decrypter
+                        <a href="https://github.com/Uday-Singh1/Colorpicker" target="_blank" class="github-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </h2>
+                    <p class="project__description" id="js--language-desc-5">Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                </div>
+            </article>
+    
+    
+            <div class="popup-overlay"></div>
+            <div class="popup" id="project-6-popup">
+                <ul class="popup__content">
+                    <li class="popup__section--left">
+                        <figure class="popup__figure">
+                            <img class="popup__image__size" src="img/encrypt.webp" alt="Project 1">
+                        </figure>
+                        <div class="popup__languages">
+                            <span class="popup__language-icon"><i class="fab fa-html5"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-css3"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-sass"></i></span>
+                            <span class="popup__language-icon"><i class="fab fa-js"></i></span>
+                        </div>
+                    </li>
+                    <li class="popup__section--right">
+                        <article class="popup__text__container">
+                            <h2 class="popup__title">Encrypter</h2>
+                            <p class="popup__description" id="js--language-desc-popup-6" >Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.</p>
+                            <div class="popup__button__container">
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-brands fa-github"></i> Bekijk de broncode </a>
+                                <a href="https://github.com/Uday-Singh1/Yubtub-frontend-m8" target="_blank" class="popup__button"><i class="fa-solid fa-globe"></i> Bekijk Live </a>
+                            </div>
+                        </article>
+                    </li>
+                    <button class="popup__close-button"></button>
+                </ul>
+            </div>
+            <!-- Voeg meer projecten toe zoals hierboven -->
+          
         </section>
     </main>
 

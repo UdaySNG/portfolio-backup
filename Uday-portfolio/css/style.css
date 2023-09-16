@@ -40,6 +40,7 @@ body {
   font-size: 16px;
   color: #333;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* Voeg een lijntje onder de knop toe en verberg het standaard */
@@ -298,7 +299,7 @@ body {
   font-family: sans-serif;
 }
 
-.popup__description__youtube {
+.popup__description {
   font-size: 3rem;
   font-family: sans-serif;
   height: 51%;
@@ -805,7 +806,7 @@ body {
     text-align: center;
     width: 100%;
   }
-  .popup__description__youtube {
+  .popup__description {
     font-size: 1.8rem;
     font-family: sans-serif;
     height: 51%;

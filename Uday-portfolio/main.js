@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectsBtn = document.querySelector('.header__button--projects');
     const aboutBtn = document.querySelector('.header__button--about');
     const contactBtn = document.querySelector('.header__button--contact');
+    // const homeBtn = document.querySelector('.header__button--home');
 
     // Voeg scrollgedrag toe aan de knoppen
     projectsBtn.addEventListener('click', () => {
@@ -55,13 +56,27 @@ class LanguageToggle {
     constructor() {
         this.languageToggle = document.getElementById("language-toggle");
         this.headerTitle = document.querySelector(".header__title");
+        // this.homeBtn = document.querySelector(".header__button--home")
+        this.contactBtn = document.querySelector(".header__button--contact");
         this.projectsButton = document.querySelector(".header__button--projects");
         this.aboutButton = document.querySelector(".header__button--about");
-        this.contactButton = document.querySelector(".header__button--contact");
+      
 
         this.projectdescription = document.querySelector(".project__description");
         this.projectdescription2 = document.getElementById("js--language-desc-1");
         this.projectdescription3 = document.getElementById("js--language-desc-2");
+        this.projectdescription4 = document.getElementById("js--language-desc-3");
+        this.projectdescription5 = document.getElementById("js--language-desc-4");
+        this.projectdescription6 = document.getElementById("js--language-desc-5");
+        // js--language-desc-5
+
+        this.popupdescription1 = document.getElementById("js--language-desc-popup-1");
+        this.popupdescription2 = document.getElementById("js--language-desc-popup-2");
+        this.popupdescription3 = document.getElementById("js--language-desc-popup-3");
+        this.popupdescription4 = document.getElementById("js--language-desc-popup-4");
+        this.popupdescription5 = document.getElementById("js--language-desc-popup-5");
+        this.popupdescription6 = document.getElementById("js--language-desc-popup-6");
+
 
         this.abouttitle = document.getElementById("js--about--title");
         this.aboutdescription = document.getElementById("js--about--description");
@@ -92,12 +107,25 @@ class LanguageToggle {
             this.headerTitle.textContent = "Uday Singh";
             this.projectsButton.textContent = "My Projects";
             this.aboutButton.textContent = "About Me";
-            this.contactButton.textContent = "Contact";
+            this.contactBtn.textContent = "Contact";
+            // this.homeBtn.textContent = "Home";
+
             this.projectdescription.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
             this.projectdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS.";
             this.projectdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
+            this.projectdescription4.textContent = "In this project I had created a banking application with data extracted from the json and displayed.";
+            this.projectdescription5.textContent = "Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things.";
+            this.projectdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
+            
+            this.popupdescription1.textContent = "Here I made a YouTube clone with the house style of the Twitch streaming platform.";
+            this.popupdescription2.textContent = "In this project I recreated the front page of popular course website Udemy in HTML&CSS and JS";
+            this.popupdescription3.textContent = "Here I took inspiration from my favorite color website, Colorhunt so I made my own color picker.";
+            this.popupdescription4.textContent = "In this project I had created a banking application with data extracted from the json and displayed.";
+            this.popupdescription5.textContent = "Here i made a website fully dedicated to tulips since i live in the netherlands, i thought why not make a website that showcases one of it's most popular things.";
+            this.popupdescription6.textContent = "In this project I made an encrypter and decrypter, it is a fun and valuable project.";
+
             this.viewmorebutton.textContent = "View More";
-            this.mycvbutton.textContent = "My CV"
+            this.mycvbutton.textContent = "My CV";
             // this.typedtext.textContent = "Uday Singh - SoftwareDeveloper";
             this.abouttitle.textContent = "About Me";
             this.aboutdescription.textContent = "I am a passionate software developer. My expertise includes HTML, CSS, JavaScript and other modern web technologies.";
@@ -116,10 +144,27 @@ class LanguageToggle {
             this.headerTitle.textContent = "Uday Singh";
             this.projectsButton.textContent = "Mijn Projecten";
             this.aboutButton.textContent = "Over Mij";
-            this.contactButton.textContent = "Contact";
+            this.contactBtn.textContent = "Contact";
+            // this.homeBtn.textContent = "Thuis";
+           
+
             this.projectdescription.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform.";
             this.projectdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js.";
             this.projectdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt.";
+            this.projectdescription4.textContent = "In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond.";
+            this.projectdescription5.textContent = "Hier heb ik een website gemaakt die volledig gewijd is aan tulpen, aangezien ik in Nederland woon. Ik dacht: waarom zou ik niet een website maken die een van de meest populaire dingen laat zien?.";
+            this.projectdescription6.textContent = "In dit project heb ik een encrypter en decrypter gemaakt, het is een leuke en waardevolle project.";
+ 
+            this.popupdescription1.textContent = "Hier had ik een youtube clone gemaakt met de huiststyle van de Twitch streaming platform."
+            this.popupdescription2.textContent = "In dit project had ik de voorpagina van populaire cursus website Udemy nagemaakt in html&css en js."
+            this.popupdescription3.textContent = "Hier nam ik inspiratie van mijn favoriete kleuren website, Colorhunt dus ik had mijn eigen colorpicker gemaakt."
+            this.popupdescription4.textContent = "In dit project had ik een bank applicatie gemaakt met data dat uit de json was gehaald en werd getoond"
+            this.popupdescription5.textContent = "Hier heb ik een website gemaakt die volledig gewijd is aan tulpen, aangezien ik in Nederland woon. Ik dacht: waarom zou ik niet een website maken die een van de meest populaire dingen laat zien?."
+            this.popupdescription6.textContent = "In dit project heb ik een encrypter en decrypter gemaakt, het is een leuke en waardevolle project."
+
+
+
+
             this.viewmorebutton.textContent = "Zie Meer";
             this.mycvbutton.textContent = "Mijn CV"
             // this.typedtext.textContent = "Uday Singh - Software Ontwikkelaar";
@@ -175,6 +220,61 @@ document.addEventListener('DOMContentLoaded', function () {
     const typewriter = new Typewriter(typewriterText, text, delay);
 });
 
+
+// script.js
+
+class ButtonHandler {
+    constructor(buttonId, targetPage) {
+        this.button = document.getElementById("js--view-more");
+        
+
+      this.targetPage = targetPage;
+      this.addClickHandler();
+    }
+  
+    addClickHandler() {
+      this.button.addEventListener("click", () => {
+        this.navigateToPage();
+      });
+    }
+  
+    navigateToPage() {
+      window.location.href = this.targetPage;
+    }
+  }
+  
+
+const bekijkMeerButton = new ButtonHandler("bekijk-meer", "projecten.html");
+
+
+// Definieer een klasse (class) voor knoppen
+// class LinkButton {
+//     constructor(buttonElement, targetPage) {
+//       this.buttonElement = buttonElement;
+//       this.targetPage = targetPage;
+  
+//       this.buttonElement.addEventListener("click", () => {
+//         this.navigateToPage();
+//       });
+//     }
+  
+//     navigateToPage() {
+//       window.location.href = this.targetPage;
+//     }
+//   }
+  
+//   // Maak instanties van de klasse voor elke knop
+//   const homeButton = new LinkButton(
+//     document.getElementById("js--home--button"),
+//     "index.html"
+//   );
+  
+ 
+//   const aboutButton = new LinkButton(
+//     document.getElementById("js--about--button"),
+//     "index.html"
+//   );
+  
 
 class ScrollToTopButton {
     constructor() {
